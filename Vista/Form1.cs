@@ -68,7 +68,17 @@ namespace Vista
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+
+            int fila = dgvProductos.CurrentRow.Index;
+
             Productos pro = new Productos();
+
+            pro.Id = int.Parse(dgvProductos.Rows[fila].Cells[0].Value.ToString());
+            pro.Nombre = dgvProductos.Rows[fila].Cells[1].Value.ToString();
+            pro.Descripcion = dgvProductos.Rows[fila].Cells[2].Value.ToString();
+            pro.Precio = Convert.ToDouble(dgvProductos.Rows[fila].Cells[3].Value.ToString());
+            pro.Fecha = Convert.ToDateTime(dgvProductos.Rows[fila].Cells[4].Value.ToString());
+
             Editar form = new Editar(pro);
             form.ShowDialog();
 
