@@ -49,6 +49,7 @@
             btnGuardar.TabIndex = 17;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtFecha
             // 
@@ -118,7 +119,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(332, 59);
+            label5.Location = new Point(216, 59);
             label5.Name = "label5";
             label5.Size = new Size(28, 25);
             label5.TabIndex = 18;
@@ -127,7 +128,7 @@
             // lblId
             // 
             lblId.AutoSize = true;
-            lblId.Location = new Point(396, 59);
+            lblId.Location = new Point(332, 59);
             lblId.Name = "lblId";
             lblId.Size = new Size(28, 25);
             lblId.TabIndex = 19;
