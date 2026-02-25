@@ -44,7 +44,12 @@ namespace Vista
             peticion.AddBody(producto);
             var res = await cliente.ExecutePutAsync(peticion);
 
-            MessageBox.Show("Se actualizó el registro");
+            if (res.StatusCode == System.Net.HttpStatusCode.OK) {
+                MessageBox.Show("Se actualizó el registro");
+                this.DialogResult = DialogResult.OK;
+            } else {
+                MessageBox.Show("Error al actualizar");
+            }
         }
     }
 }
