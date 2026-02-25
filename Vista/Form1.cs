@@ -7,6 +7,8 @@ namespace Vista
 {
     public partial class Form1 : Form
     {
+        List<Productos> listaProductos = new List<Productos>();
+
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +39,7 @@ namespace Vista
             List<Productos> lista = (List<Productos>)JsonConvert.DeserializeObject(res.Content, typeof(List<Productos>));
 
             dgvProductos.DataSource = lista;
+            listaProductos = lista;
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
