@@ -91,5 +91,12 @@ namespace Vista
             }
 
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            List<Productos> listaFiltro = listaProductos.FindAll(x => x.Nombre.Contains(txtBuscar.Text));
+
+            dgvProductos.DataSource = listaFiltro;
+        }
     }
 }

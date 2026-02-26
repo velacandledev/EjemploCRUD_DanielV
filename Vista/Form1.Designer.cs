@@ -34,6 +34,7 @@
             btnEliminar = new Button();
             btnActualizar = new Button();
             txtBuscar = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
             // 
@@ -48,6 +49,7 @@
             // 
             // btnNuevo
             // 
+            btnNuevo.Font = new Font("Segoe UI", 12F);
             btnNuevo.Location = new Point(49, 98);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new Size(112, 34);
@@ -58,6 +60,7 @@
             // 
             // btnEditar
             // 
+            btnEditar.Font = new Font("Segoe UI", 12F);
             btnEditar.Location = new Point(49, 138);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(112, 34);
@@ -68,6 +71,7 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.Font = new Font("Segoe UI", 12F);
             btnEliminar.Location = new Point(49, 178);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(112, 34);
@@ -78,6 +82,7 @@
             // 
             // btnActualizar
             // 
+            btnActualizar.Font = new Font("Segoe UI", 12F);
             btnActualizar.Location = new Point(49, 218);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(112, 34);
@@ -88,16 +93,28 @@
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(225, 46);
+            txtBuscar.Location = new Point(458, 50);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(523, 31);
+            txtBuscar.Size = new Size(578, 31);
             txtBuscar.TabIndex = 5;
+            txtBuscar.TextChanged += txtBuscar_TextChanged;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(230, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(222, 32);
+            label1.TabIndex = 6;
+            label1.Text = "Buscar por nombre:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1062, 551);
+            Controls.Add(label1);
             Controls.Add(txtBuscar);
             Controls.Add(btnActualizar);
             Controls.Add(btnEliminar);
@@ -121,5 +138,6 @@
         private Button btnEliminar;
         private Button btnActualizar;
         private TextBox txtBuscar;
+        private Label label1;
     }
 }
