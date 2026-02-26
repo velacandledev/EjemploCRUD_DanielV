@@ -35,6 +35,7 @@
             btnActualizar = new Button();
             txtBuscar = new TextBox();
             label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             dgvProductos.Location = new Point(225, 98);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.RowHeadersWidth = 62;
-            dgvProductos.Size = new Size(996, 530);
+            dgvProductos.Size = new Size(928, 476);
             dgvProductos.TabIndex = 0;
             // 
             // btnNuevo
@@ -109,11 +110,21 @@
             label1.TabIndex = 6;
             label1.Text = "Buscar por nombre:";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(225, 602);
+            label2.Name = "label2";
+            label2.Size = new Size(225, 25);
+            label2.TabIndex = 7;
+            label2.Text = "@velacandledev en GitHub";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1246, 668);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtBuscar);
             Controls.Add(btnActualizar);
@@ -139,5 +150,6 @@
         private Button btnActualizar;
         private TextBox txtBuscar;
         private Label label1;
+        private Label label2;
     }
 }
