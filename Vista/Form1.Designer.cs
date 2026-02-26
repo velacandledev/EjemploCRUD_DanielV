@@ -52,7 +52,7 @@
             btnNuevo.Font = new Font("Segoe UI", 12F);
             btnNuevo.Location = new Point(49, 98);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(112, 34);
+            btnNuevo.Size = new Size(154, 44);
             btnNuevo.TabIndex = 1;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // btnEditar
             // 
             btnEditar.Font = new Font("Segoe UI", 12F);
-            btnEditar.Location = new Point(49, 138);
+            btnEditar.Location = new Point(49, 148);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(112, 34);
+            btnEditar.Size = new Size(154, 44);
             btnEditar.TabIndex = 2;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@
             // btnEliminar
             // 
             btnEliminar.Font = new Font("Segoe UI", 12F);
-            btnEliminar.Location = new Point(49, 178);
+            btnEliminar.Location = new Point(49, 198);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(112, 34);
+            btnEliminar.Size = new Size(154, 44);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // btnActualizar
             // 
             btnActualizar.Font = new Font("Segoe UI", 12F);
-            btnActualizar.Location = new Point(49, 218);
+            btnActualizar.Location = new Point(49, 248);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(112, 34);
+            btnActualizar.Size = new Size(154, 44);
             btnActualizar.TabIndex = 4;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
