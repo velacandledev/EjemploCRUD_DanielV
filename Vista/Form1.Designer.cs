@@ -44,7 +44,7 @@
             dgvProductos.Location = new Point(225, 98);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.RowHeadersWidth = 62;
-            dgvProductos.Size = new Size(996, 405);
+            dgvProductos.Size = new Size(996, 530);
             dgvProductos.TabIndex = 0;
             // 
             // btnNuevo
@@ -113,7 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1246, 551);
+            ClientSize = new Size(1246, 668);
             Controls.Add(label1);
             Controls.Add(txtBuscar);
             Controls.Add(btnActualizar);
