@@ -44,7 +44,7 @@
             dgvProductos.Location = new Point(225, 98);
             dgvProductos.Name = "dgvProductos";
             dgvProductos.RowHeadersWidth = 62;
-            dgvProductos.Size = new Size(811, 405);
+            dgvProductos.Size = new Size(996, 405);
             dgvProductos.TabIndex = 0;
             // 
             // btnNuevo
@@ -95,7 +95,7 @@
             // 
             txtBuscar.Location = new Point(458, 50);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(578, 31);
+            txtBuscar.Size = new Size(763, 31);
             txtBuscar.TabIndex = 5;
             txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
@@ -113,7 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1062, 551);
+            ClientSize = new Size(1246, 551);
             Controls.Add(label1);
             Controls.Add(txtBuscar);
             Controls.Add(btnActualizar);
