@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Controlador/Controlador.csproj" Id="4c2ab003-1620-452c-aacd-7d9f6052db4b" />
+  <Project Path="Modelo/Modelo.csproj" Id="a1be04ad-d759-43b4-8edd-eefc722dfdbd" />
   <Project Path="Vista/Vista.csproj" />
 </Solution>
