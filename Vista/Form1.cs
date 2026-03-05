@@ -2,6 +2,7 @@ using RestSharp;
 using Newtonsoft.Json;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
+using Modelo;
 
 namespace Vista
 {

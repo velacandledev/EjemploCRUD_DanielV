@@ -13,4 +13,8 @@
     <PackageReference Include="RestSharp" Version="113.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj" />
+  </ItemGroup>
+
 </Project>
