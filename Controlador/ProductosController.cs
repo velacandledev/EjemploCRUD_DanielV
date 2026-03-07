@@ -7,6 +7,9 @@ namespace Controlador
 {
     public class ProductosController
     {
-
+        public Task<List<Productos>> listarProductos()
+        {
+            return Productos.obtenerProductos();
+        }
     }
 }

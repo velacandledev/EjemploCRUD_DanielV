@@ -33,7 +33,9 @@ namespace Vista
 
         private async void cargarProductos()
         {
-            
+            // Hacer referencia a controlador
+            // Crear objeto Controlador
+            // Llenar grid
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
