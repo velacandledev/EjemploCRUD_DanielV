@@ -3,12 +3,15 @@ using Newtonsoft.Json;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 using Modelo;
+using Controlador;
 
 namespace Vista
 {
     public partial class Form1 : Form
     {
         List<Productos> listaProductos = new List<Productos>();
+
+        ProductosController controlador = new ProductosController();
 
         public Form1()
         {
@@ -33,9 +36,13 @@ namespace Vista
 
         private async void cargarProductos()
         {
-            // Hacer referencia a controlador
-            // Crear objeto Controlador
+
             // Llenar grid
+
+            dgvProductos.DataSource = controlador.listarProductos();
+
+            // listaProductos = controlador.listarProductos();
+
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
