@@ -39,9 +39,7 @@ namespace Vista
 
             // Llenar grid
 
-            dgvProductos.DataSource = controlador.listarProductos();
-
-            // listaProductos = controlador.listarProductos();
+            dgvProductos.DataSource = await controlador.listarProductos();
 
         }
 
