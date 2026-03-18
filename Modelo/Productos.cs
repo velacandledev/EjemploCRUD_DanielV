@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using RestSharp;
 using Newtonsoft.Json;
+using System.Collections.Specialized;
 
 namespace Modelo
 {
@@ -27,6 +28,24 @@ namespace Modelo
 
             // dgvProductos.DataSource = lista;
             // listaProductos = lista;
+        }
+
+        public static async Task<string> crearProducto(Productos pro)
+        {
+            RestClient cliente = new RestClient();
+            RestRequest peticion = new RestRequest("https://67db76a51fd9e43fe4749f9c.mockapi.io/api/v1/Productos", Method.Post);
+            peticion.AddJsonBody(pro);
+
+            var res = await cliente.ExecutePostAsync(peticion);
+
+            if (res.StatusCode == System.Net.HttpStatusCode.Created)
+            {
+                return "Producto creado";
+            }
+            else
+            {
+                return "Error al crear";
+            }
         }
     }
 }
