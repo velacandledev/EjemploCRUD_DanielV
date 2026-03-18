@@ -11,5 +11,10 @@ namespace Controlador
         {
             return Productos.obtenerProductos();
         }
+
+        public Task<string> nuevoProducto(Productos pro)
+        {
+            return Productos.crearProducto(pro);
+        }
     }
 }
