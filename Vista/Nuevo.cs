@@ -32,6 +32,12 @@ namespace Vista
 
             string mensaje = await controlador.nuevoProducto(pro);
 
+            if(mensaje == "Producto creado") {
+                MessageBox.Show(mensaje);
+                this.DialogResult = DialogResult.OK;
+            } else {
+                MessageBox.Show(mensaje);
+            }
         }
     }
 }
